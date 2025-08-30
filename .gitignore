@@ -1,5 +1,7 @@
 a.out
-a.out.dSYM
+*.dSYM
+
 .cache/
 build/
 
+hello
