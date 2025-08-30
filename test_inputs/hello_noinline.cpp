@@ -1,8 +1,8 @@
 
 struct MyClass {
-    const char*        method_1() { return "method_1"; }
-    inline char const* method_2();
-    char const*        method_3();
+    [[gnu::noinline]] const char*        method_1() { return "method_1"; }
+    [[gnu::noinline]] inline char const* method_2();
+    [[gnu::noinline]] char const*        method_3();
 };
 
 char const* MyClass::method_2() { return "method_2"; }
