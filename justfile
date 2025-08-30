@@ -35,7 +35,6 @@ ast_dump *args:
     {{clang_cxx}} -Xclang=-ast-dump -c {{args}}
 
 build_test_file *args: build
-    mkdir -p build/test_files
     {{clang_cxx}} \
         -fplugin=build/librewrite_methods.{{lib_ext}} \
         -Xclang=-add-plugin \
