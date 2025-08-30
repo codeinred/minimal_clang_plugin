@@ -134,7 +134,7 @@ class method_visitor : public RecursiveASTVisitor<method_visitor> {
 
         auto msg = string_literal(
             loc,
-            fmt::format("Successfully rewrite {} @ {}", m.getNameAsString(), string(loc)));
+            fmt::format("Successfully rewrote {} @ {}", m.getNameAsString(), string(loc)));
 
 
         m.setBody(                //
