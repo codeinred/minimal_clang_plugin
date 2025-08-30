@@ -11,7 +11,7 @@ set(CMAKE_CXX_VISIBILITY_PRESET hidden)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 if(UNIX)
-    add_compile_options(-Wall -fcolor-diagnostics -g)
+    add_compile_options(-Wall -fdiagnostics-color=always -g)
 endif()
 
 include(cmake/get_cpm.cmake)
