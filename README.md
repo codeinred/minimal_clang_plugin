@@ -48,9 +48,19 @@ clang++ \
 
 ### Running the compiled program
 
-All methods listed above should produce an executable named `hello`. This executable
-is a compiled version of `test_inputs/hello.cpp`.
+All methods listed above should produce an executable named `hello`. This
+executable is a compiled version of `test_inputs/hello.cpp`.
 
 ```sh
 ./hello
 ```
+
+### Output during compilation
+
+The plugin will print out information about which methods it's discovered, and
+which methods it's rewritten.
+
+The plugin will rewrite any methods that return a `const char*`. The new method
+will return a string indicating that it was successfully rewritten.
+
+![Example plugin output](images/plugin-output.png)
