@@ -5,3 +5,7 @@ a.out
 build/
 
 hello
+hello_noinline
+
+.DS_Store
+.idea/
